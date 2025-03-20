@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #a3aad4;
+            padding: 20px 0;
+            color: white;
+        }
+
+        header .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header .name {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 50px 0;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        #about {
+            background-color: #a5b5e6;
+        }
+
+        #education {
+            background-color: #c793cf;
+        }
+
+        #contact {
+            background-color: #83b6de;
+            color: white;
+        }
+
+        footer {
+            background-color: #a3aad4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
+        .edu-item {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .edu-item:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .edu-item:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .edu-item:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            header .name {
+                font-size: 2em;
+            }
+
+            .section {
+                padding: 30px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="name">Dharani M</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="C:\Users\HARISH\Downloads\CUsersHARISHDownloadsBlack and White Clean Professional A4 Resume (1).pdf (1).pdf" download>Download CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with a love for creating beautiful and functional websites. I specialize in front-end development with a focus on responsive design.</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Educational Qualifications</h2>
+            <div class="edu-item">
+                <h3>Bachelor's in Computer Applications</h3>
+                <p>SRM Arts and Science College</p>
+                <p>A comprehensive degree covering various aspects of computer applications including algorithms, databases, and web development.</p>
+            </div>
+            <div class="edu-item">
+                <h3>Higher education</h3>
+                <p>Sri Sankara matric hr sec school, 2016</p>
+                <p>Completed high school with a focus on mathematics and physics, which sparked my interest in technology and software development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you want to get in touch, feel free to reach out via email at <strong>dharanim@srmasc.ac.in</strong>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dharani M. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Optionally, you could add more JavaScript for additional interactions if needed.
+    </script>
+</body>
+</html>
